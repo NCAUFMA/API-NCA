@@ -3,7 +3,7 @@ module.exports = (req, res) => {
     const origin = req.headers.origin;
   
     // Verifique se a origem da solicitação está na lista de origens permitidas
-    if (allowedOrigins.includes(origin)) {}
+    if (allowedOrigins.includes(origin)) {
       res.setHeader('Access-Control-Allow-Origin', origin);
     } else {
       res.setHeader('Access-Control-Allow-Origin', ''); // Define como vazio para outras origens
