@@ -15,7 +15,7 @@ const submitMembro = require('./api/submitMembro');
 const submitNoticias = require('./api/submitNoticias');
 const submitProjeto = require('./api/submitProjeto');
 const hashPassword = require('./api/hashPassword');
-const deleteUser = require('./api/deleteuser');
+const deleteUser = require('./api/deleteUser');
 const verifyPassword = require('./api/verifyPassword');
 
 
