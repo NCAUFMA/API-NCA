@@ -15,7 +15,9 @@ const submitMembro = require('./api/submitMembro');
 const submitNoticias = require('./api/submitNoticias');
 const submitProjeto = require('./api/submitProjeto');
 const hashPassword = require('./api/hashPassword');
+const deleteUser = require('./api/deleteuser');
 const verifyPassword = require('./api/verifyPassword');
+
 
 // Definindo rotas
 app.get('/api/getSecretKeys', getSecretKeys);
@@ -24,7 +26,6 @@ app.post('/api/submitNoticias', submitNoticias);
 app.post('/api/submitProjeto', submitProjeto);
 app.post('/api/hashPassword', hashPassword);
 app.post('/api/verifyPassword', verifyPassword);
-
 // Iniciar servidor
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
