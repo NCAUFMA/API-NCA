@@ -26,6 +26,8 @@ app.post('/api/submitNoticias', submitNoticias);
 app.post('/api/submitProjeto', submitProjeto);
 app.post('/api/hashPassword', hashPassword);
 app.post('/api/verifyPassword', verifyPassword);
+app.post('/api/deleteUser', deleteUser);
+
 // Iniciar servidor
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
