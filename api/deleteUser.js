@@ -1,4 +1,5 @@
 const admin = require('firebase-admin');
+console.log(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
 
 // Configura o Firebase Admin com variáveis de ambiente
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
