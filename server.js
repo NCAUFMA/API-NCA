@@ -16,7 +16,6 @@ const submitMembro = require('./api/submitMembro');
 const submitNoticias = require('./api/submitNoticias');
 const submitProjeto = require('./api/submitProjeto');
 const hashPassword = require('./api/hashPassword');
-const deleteUser = require('./api/deleteUser');
 const verifyPassword = require('./api/verifyPassword');
 
 
@@ -28,7 +27,6 @@ app.post('/api/submitNoticias', submitNoticias);
 app.post('/api/submitProjeto', submitProjeto);
 app.post('/api/hashPassword', hashPassword);
 app.post('/api/verifyPassword', verifyPassword);
-app.post('/api/deleteUser', deleteUser);
 
 // Iniciar servidor
 app.listen(PORT, () => {
