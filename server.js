@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Importando rotas
+const getProjects = require('./api/getProjects');
 const getSecretKeys = require('./api/getSecretKeys');
 const submitMembro = require('./api/submitMembro');
 const submitNoticias = require('./api/submitNoticias');
@@ -20,6 +21,7 @@ const verifyPassword = require('./api/verifyPassword');
 
 
 // Definindo rotas
+app.get('/api/getProjects', getProjects);
 app.get('/api/getSecretKeys', getSecretKeys);
 app.post('/api/submitMembro', submitMembro);
 app.post('/api/submitNoticias', submitNoticias);
