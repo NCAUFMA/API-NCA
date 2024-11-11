@@ -11,6 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Importando rotas
 const getProjects = require('./api/getProjects');
+const getNoticias = require('./api/getNoticias');
+const getMembros =  require('./api/getMembros');
+const getLaboratorios = require('./api/getLaboratorios');
 const getSecretKeys = require('./api/getSecretKeys');
 const submitMembro = require('./api/submitMembro');
 const submitNoticias = require('./api/submitNoticias');
@@ -21,6 +24,9 @@ const verifyPassword = require('./api/verifyPassword');
 
 // Definindo rotas
 app.get('/api/getProjects', getProjects);
+app.get('/api/getNoticias', getNoticias);
+app.get('/api/getMembros', getMembros);
+app.get('/api/getLaboratorios', getLaboratorios);
 app.get('/api/getSecretKeys', getSecretKeys);
 app.post('/api/submitMembro', submitMembro);
 app.post('/api/submitNoticias', submitNoticias);
